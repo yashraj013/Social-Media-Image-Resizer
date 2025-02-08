@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Social Media Image Resizer</h1>
+        <p>Resize your images for different social media platforms</p>
+    </div>
+
+    <div class="upload-container" id="dropZone">
+        <p>Drag and drop your image here</p>
+        <p>or</p>
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="document.getElementById('fileInput').click()">Choose File</button>
+    </div>
+
+    <div class="controls">
+        <select id="platformSelect">
+            <option value="">Select Platform</option>
+            <option value="instagram">Instagram Profile</option>
+            <option value="facebook">Facebook Profile</option>
+            <option value="twitter">Twitter</option>
+            <option value="twitter">Linkedin Profile</option>
+            <option value="twitter">WhatsApp Profile</option>
+        </select>
+        <div class="platform-info" id="platformInfo"></div>
+    </div>
+
+    <div class="preview-container" id="previewContainer">
+        <h3>Original Image</h3>
+        <img id="originalPreview" alt="Original image preview">
+        <h3>Resized Image</h3>
+        <img id="resizedPreview" alt="Resized image preview">
+        <button id="downloadBtn" disabled>Download Resized Image</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

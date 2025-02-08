@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #020225;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #020225;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(29, 49, 151, 0.805);
+    color:#666
+}
+
+.header h1 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.upload-container {
+    background-color: #020225;
+    border: 2px dashed #2196f3;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #666;
+}
+
+.upload-container:hover {
+    background-color: #050539;
+}
+
+.upload-container.dragover {
+    background-color: #e3f2fd;
+    border-color: #1976d2;
+}
+
+.controls {
+    background-color: #020225;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(29, 49, 151, 0.805);
+    color: #666;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(29, 49, 151, 0.805);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #020225;
+    color: #666;
+}
+
+.platform-info {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.preview-container {
+    display: none;
+    background-color: #020225;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(30, 58, 197, 0.805);
+    color: #666;
+}
+
+.preview-container h3 {
+    margin: 15px 0;
+    color: #4b4a4a;
+}
+
+.preview-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#fileInput {
+    display: none;
+}
